@@ -74,3 +74,4 @@ When the normal game rules have become too easy/boring you might consider adding
 ### Groovy [![Dependency Status](https://www.versioneye.com/user/projects/544a3042c310f90e740000ce/badge.svg?style=flat)](https://www.versioneye.com/user/projects/544a3042c310f90e740000ce)
 
 ### Clojure [![Dependency Status](https://www.versioneye.com/user/projects/544a3042c310f9bcb5000126/badge.svg?style=flat)](https://www.versioneye.com/user/projects/544a3042c310f9bcb5000126)
+# trading_card_game
