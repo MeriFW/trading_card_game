@@ -8,10 +8,10 @@ In this [Code Kata](http://en.wikipedia.org/wiki/Kata_\(programming\)) you will 
 
 | Rule |
 | --- |
-| Each player starts the game with 30 _Health_ and 0 _Mana_ slots. |
-| Each player starts with a deck of 20 cards with the following Mana costs: 0,0,1,1,2,2,2,3,3,3,3,4,4,4,5,5,6,6,7,8 |
-| From the deck each player receives 3 random cards has his initial hand. |
-| One player is randomly chosen to be the starting _active player_. The _other_ player draws a 4th card from his deck to compensate him for not playing the first turn. |
+| Each player starts the game with 30 Health and 0 Mana slots. |
+| Each player starts with a deck of 20 cards with random mana cost, between 0 and 8 |
+| From the deck each player receives 4 random cards as his initial hand. |
+| One player is randomly chosen to be the starting _active player_. The other player starts as the _opponent_. |
 
 ### Basic Gameplay
 

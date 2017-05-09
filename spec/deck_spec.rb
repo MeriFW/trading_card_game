@@ -1,19 +1,13 @@
 require_relative './../src/deck'
 
 describe 'Deck' do
-  it 'starts with 20 cards' do
+  it 'starts complete' do
     deck = Deck.new
 
-    result = deck.remaining_cards?(20)
+    remaining_cards = deck.remaining_cards?(20)
+    complete = deck.complete?
 
-    expect(result).to be(true)
-  end
-
-  it 'contains cards with different mana costs' do
-    deck = Deck.new
-
-    result = deck.complete?
-
-    expect(result).to be(true)
+    expect(remaining_cards).to be(true)
+    expect(complete).to be(true)
   end
 end
