@@ -1,5 +1,5 @@
-require_relative './../src/game'
-require_relative './../src/player'
+require_relative './../system/game'
+require_relative './../system/player'
 
 describe 'Game' do
   it 'prepares table' do

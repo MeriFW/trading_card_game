@@ -1,4 +1,4 @@
-require_relative './../src/hand'
+require_relative './../system/hand'
 
 describe 'Hand' do
   it 'receives cards' do

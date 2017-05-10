@@ -1,4 +1,4 @@
-require_relative './../src/card'
+require_relative './../system/card'
 
 describe 'Card' do
   it 'has a mana cost' do

@@ -1,5 +1,5 @@
-require_relative './../src/deck'
-require_relative './../src/card'
+require_relative './../system/deck'
+require_relative './../system/card'
 
 describe 'Deck' do
   it 'can be provided up to 20 cards' do

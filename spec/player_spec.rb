@@ -1,4 +1,4 @@
-require_relative './../src/player'
+require_relative './../system/player'
 
 describe 'Player' do
   it 'borns with 30 points of health' do
