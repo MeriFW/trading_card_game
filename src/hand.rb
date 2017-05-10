@@ -1,5 +1,13 @@
 class Hand
+  def initialize
+    @cards = Array.new
+  end
+
   def remaining_cards?(amount)
-    true
+    @cards.length == amount
+  end
+
+  def receive(card)
+    @cards.push(card)
   end
 end

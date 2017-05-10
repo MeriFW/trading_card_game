@@ -1,11 +1,16 @@
 require_relative './../src/hand'
 
 describe 'Hand' do
-  it 'starts with 4 cards' do
+  it 'receives cards' do
     hand = Hand.new
 
-    result = hand.remaining_cards?(4)
+    hand.receive(some_card)
 
-    expect(result).to be(true)
+    expect(hand.remaining_cards?(1)).to be(true)
+    expect(hand.remaining_cards?(2)).to be(false)
+  end
+
+  def some_card
+    Card.new
   end
 end
