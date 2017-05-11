@@ -18,8 +18,8 @@ describe 'Player' do
   it 'starts with no cards' do
     player = Player.new
 
-    expect(player.cards_in_hand?(initial_cards_in_deck)).to be(true)
-    expect(player.cards_in_deck?(initial_cards_in_hand)).to be(true)
+    expect(player.cards_in_hand?(initial_cards_in_hand)).to be(true)
+    expect(player.cards_in_deck?(initial_cards_in_deck)).to be(true)
   end
 
   def initial_health
