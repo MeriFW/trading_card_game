@@ -29,10 +29,19 @@ class Player
     @deck = deck
   end
 
-  private
-
-  def draw(card)
+  def draw
     card = @deck.draw
     @hand.receive(card)
+  end
+
+  def obtain_mana_slot
+    @mana_slots += 1
+  end
+
+  def refill_mana
+  end
+
+  def remaining_mana?(amount)
+    true
   end
 end

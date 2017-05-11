@@ -7,6 +7,10 @@ class Game
   end
 
   def start
+    player = @players[0]
+
+    4.times { player.draw }
+    player.obtain_mana_slot
   end
 
   private

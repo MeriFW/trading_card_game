@@ -22,6 +22,31 @@ describe 'Player' do
     expect(player.cards_in_deck?(initial_cards_in_deck)).to be(true)
   end
 
+  it 'draws cards' do
+    player = Player.new
+
+    player.draw
+
+    expect(player.cards_in_hand?(1)).to be(true)
+  end
+
+  it 'obtains mana slots' do
+    player = Player.new
+
+    player.obtain_mana_slot
+
+    expect(player.available_mana_slots?(1)).to be(true)
+  end
+
+  it 'knows remaining mana' do
+    player = Player.new
+    player.obtain_mana_slot
+
+    player.refill_mana
+
+    expect(player.remaining_mana?(1)).to be(true)
+  end
+
   def initial_health
     30
   end
