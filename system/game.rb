@@ -6,6 +6,9 @@ class Game
     deal_decks
   end
 
+  def start
+  end
+
   private
 
   def deal_decks
