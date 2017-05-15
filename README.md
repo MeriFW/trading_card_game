@@ -17,9 +17,9 @@ In this kata you will be implementing a two-player trading card game. The rules 
 
 | Step | Rule |
 | --- | --- |
-| 1. | The active player receives 1 Mana slot up to a maximum of 10 total slots. |
-| 2. | The active player's empty Mana slots are refilled. |
-| 3. | The active player receives 1 card from the deck. |
-| 3. | The active player can play as many cards as he can afford. Each card empties Mana slots equal to its Mana cost. Each card deals immediate damage to the opponent equal to its Damage points. |
+| 1. | In the first turn, each player receives 4 cards. |
+| 2. | The active player receives 1 Mana slot up to a maximum of 10 total slots. |
+| 3. | The active player's empty Mana slots are refilled. |
+| 4. | The active player can play as many cards as he can afford. Each card empties Mana slots equal to its Mana cost. Each card deals immediate damage to the opponent equal to its Damage points. |
 | 5. | If the opponent player's Health drops to or below zero the active player wins the game. |
 | 6. | The active player's turn ends when he hits the "end turn" button. |
