@@ -2,27 +2,11 @@ require_relative './deck'
 require_relative './hand'
 
 class Player
-  def initialize
-    @deck = Deck.new([])
+  def initialize(deck)
+    @deck = deck
     @hand = Hand.new
     @mana_slots = 0
     @health = 30
-  end
-
-  def remaining_health?(points)
-    @health == points
-  end
-
-  def available_mana_slots?(slots)
-    @mana_slots == slots
-  end
-
-  def cards_in_hand?(amount)
-    @hand.remaining_cards?(amount)
-  end
-
-  def cards_in_deck?(amount)
-    @deck.remaining_cards?(amount)
   end
 
   def receive_deck(deck)
@@ -41,7 +25,23 @@ class Player
   def refill_mana
   end
 
-  def remaining_mana?(amount)
+  def remaining_mana?(points)
     true
+  end
+
+  def remaining_health?(points)
+    @health == points
+  end
+
+  def available_mana_slots?(amount)
+    @mana_slots == amount
+  end
+
+  def cards_in_hand?(amount)
+    @hand.remaining_cards?(amount)
+  end
+
+  def cards_in_deck?(amount)
+    @deck.remaining_cards?(amount)
   end
 end

@@ -7,13 +7,27 @@ class Game
   end
 
   def start
-    player = @players[0]
-
-    4.times { player.draw }
-    player.obtain_mana_slot
+    prepare
   end
 
   private
+
+  def prepare
+    player = @players[0]
+
+    deal_hand(player)
+    deal_mana_slot(player)
+  end
+
+  private
+
+  def deal_mana_slot(player)
+    player.obtain_mana_slot
+  end
+
+  def deal_hand(player)
+    4.times { player.draw }
+  end
 
   def deal_decks
     @players.each do |player|
